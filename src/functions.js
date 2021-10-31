@@ -1,6 +1,6 @@
 const numbers = '0123456789';
-const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';	// MBI uses upper-case letters
-const alphanumeric = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const alphabet = 'ACDEFGHJKMNPQRTUVWXY';	// MBI uses upper-case letters
+const alphanumeric = '0123456789ACDEFGHJKMNPQRTUVWXY';
 
 const numberSet = new Set(numbers);
 const alphabetSet = new Set(alphabet);
