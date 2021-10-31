@@ -6,4 +6,4 @@ Installs project dependencies.
 
 ### `node app.js`
 
-Runs the app.\
+Runs the app.
