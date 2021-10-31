@@ -10,7 +10,7 @@ const alphaIndex = new Set([1, 4, 7, 8]);
 const alphanumericIndex = new Set([2, 5]);
 const hyphenIndex = new Set([3, 6]);
 
-function verifyMBI(mbi) {
+function verify(mbi) {
 	const parsedMBI = mbi.split('-').join('');
 	
 	if (parsedMBI.length != 11) return false;
@@ -39,7 +39,7 @@ function verifyMBI(mbi) {
     return true;
 }
 
-function generateMBI() {
+function generate() {
 	let mbi = '';
 	
 	for (let i = 0; i < 11; i++) {
@@ -72,4 +72,4 @@ function getRandomAlphaNumeric() {
 	return alphanumeric.charAt(Math.floor(Math.random() * alphanumeric.length));
 }
 
-module.exports = { verifyMBI, generateMBI };
+module.exports = { verify, generate };

@@ -17,8 +17,8 @@ app.listen(port, () => console.log(`MBI Example app listening at http://localhos
 
 router.get('/', (_request, response) => response.json('Hello World'));
 
-router.get('/generateMBI', (_request, response) => response.json({ mbi: mbi.generateMBI() }));
+router.get('/generate', (_request, response) => response.json({ mbi: mbi.generate() }));
 
-router.post('/verifyMBI', (request, response) => {
-	response.json( {isValidMBI: mbi.verifyMBI(request.body.mbi)} );
+router.post('/verify', (request, response) => {
+	response.json( {isValidMBI: mbi.verify(request.body.mbi)} );
 });
